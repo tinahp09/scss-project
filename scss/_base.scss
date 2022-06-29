@@ -1,0 +1,157 @@
+$color-light: #fefeff;
+$color-white: #ffffff;
+$color-dark: #262627;
+$color-heading: #151516;
+$color-paragraph: #4e4f50;
+$color-about: #6ebca8;
+$color-admission: #fdd31d;
+$color-info: #363636;
+$color-placeholder: #ccc8c8;
+$color-footer: #d8b109;
+
+$font-family:'Raleway',
+sans-serif;
+$font-poppins: 'Poppins',
+sans-serif;
+
+
+@mixin btnStyle {
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: $color-white;
+    color: $color-dark;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+
+@mixin btnHover {
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+    transform: translateY(-7px);
+}
+
+@mixin commonStyleForSection {
+    padding: 50px 0;
+}
+
+@mixin commonStyleForRow {
+    align-items: center;
+}
+
+@mixin commonStyleForH3 {
+    font-weight: 600;
+    color: $color-heading;
+}
+
+@mixin commonStyleForP {
+    font-weight: 600;
+    color: $color-paragraph;
+    margin: 30px 0 50px 0;
+}
+
+@mixin commonStyleForImage {
+    width: 100%;
+}
+
+@mixin clientBeforeAfter {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fdd31d;
+}
+
+@mixin responsiveClientBeforAfter {
+    @media (max-width: 576px) {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #fdd31d;
+    }
+}
+
+@keyframes beforeanimate {
+    0% {
+        top: 43%;
+        transform: rotate(142deg);
+        left: 31%;
+
+    }
+
+    100% {
+        top: -15px;
+        transform: rotate(139deg);
+        left: -15px;
+    }
+
+
+}
+
+@keyframes afteranimate {
+    0% {
+        bottom: 46%;
+        transform: rotate(142deg);
+        right: 35%;
+    }
+
+    100% {
+        bottom: -15px;
+        transform: rotate(142deg);
+        right: -15px;
+    }
+}
+
+@keyframes beforeanimate {
+    0% {
+        top: 43%;
+        transform: rotate(142deg);
+        left: 31%;
+
+    }
+
+    100% {
+        top: 0px;
+        transform: rotate(132deg);
+        left: -15px;
+    }
+}
+
+@keyframes afteranimate {
+    0% {
+        bottom: 46%;
+        transform: rotate(142deg);
+        right: 35%;
+    }
+
+    100% {
+        bottom: 0px;
+        transform: rotate(135deg);
+        right: -15px;
+    }
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: initial;
+}
+
+.btn,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $color-light;
+}

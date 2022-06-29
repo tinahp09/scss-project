@@ -1,0 +1,63 @@
+.top_container {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(../images/hero-bg.png);
+        background-size: 100% 100%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        z-index: -1;
+        @media (max-width: 768px) {
+            background-size: cover;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        bottom: 20%;
+        left: 6%;
+        background-color: $color-admission;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .header_section {
+        padding-top: 10px;
+        font-family: $font-poppins;
+
+    }
+}
+
+.client_section {
+    padding: 75px 0;
+}
+
+.contact_section {
+    padding: 75px 45px;
+    font-family: $font-poppins;
+
+    @media (max-width: 576px) {
+        padding: 0 15px 0 15px;
+    }
+}
+
+.info_section {
+    background-color: $color-info;
+    color: $color-white;
+    font-family: $font-poppins;
+}
+
+.footer_section {
+    background-color: $color-footer;
+    padding: 20px 15px;
+    font-family: $font-poppins;
+}
